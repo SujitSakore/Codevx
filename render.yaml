@@ -15,9 +15,9 @@ services:
     name: ai-proctoring-backend
     env: node
     buildCommand: cd backend && npm install
-    startCommand: cd backend && node server.js
+    startCommand: node backend/server.js   # ✅ FIXED
     envVars:
       - key: NODE_ENV
         value: production
       - key: MONGODB_URI
-        sync: false # You'll need to set this in Render dashboard
+        sync: false
