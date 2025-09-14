@@ -24,7 +24,7 @@ app.use(
     origin:
       process.env.NODE_ENV === "production"
         ? [/\.vercel\.app$/, /localhost/, /netlify\.app$/]
-        : "http://localhost:5173",
+        : "https://codevx-ai.onrender.com",
     credentials: true,
   })
 );
